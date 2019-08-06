@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+
+
+
+    <!-- <script>function mutateTheArray(n, a) {
+      var b = []
+      for (i = 0 ; i < n ; i++){
+        var z = a[i-1];
+        var x=a[i+1]
+         if (a[i-1]==undefined){
+           z = 0
+         }
+         if(a[i+1] == undefined){
+           x = 0
+         }
+          var result = z+a[i]+x
+         b.push(result)
+      }
+      return b;
+  
+  }
+  var n = 5
+  var a = [4,0,1,-2,3]
+  
+  console.log(mutateTheArray(n, a)) -->
+
+  <script>
+  // var a = [1,2,3]
+  // var b = [1,2,3]
+  // var k = 31
+
+//   var a = [16, 1, 4, 2, 14]
+// var b = [7, 11, 2, 0, 15]
+// var k = 743
+//   function countTinyPairs(a, b, k) {
+//     var x = "";
+//     var z = "";
+//     var sum = 0
+//     var j=b.length-1
+//     for (i =0 ; i<a.length;i++)
+//     {
+//       x=a[i]
+//       for (j;j>=0;j--){
+//         z=b[j]
+//         var result = String(x)+String(z);
+//         if(result < k) sum+=1;
+//         var j = j -1;
+//         break;
+//       }
+//     }
+//     return sum;
+// }
+// countTinyPairs(a, b, k) 
+
+
+
+
+var a = [[3, 3, 4, 2],
+     [4, 4],
+     [4, 0, 3, 3],
+     [2, 3],
+     [3, 3, 3]]
+
+     function meanGroups(a) {
+       
+       var new_a=[]
+      for (i=0;i<a.length;i++){
+        var sum = 0
+        for (j=0;j<a[i].length;j++){
+          sum += a[i][j]
+        }
+        new_a.push(sum/a[i].length)
+      }
+      function removeDups(new_a) {
+        let unique = {};
+        new_a.forEach(function(i) {
+          if(!unique[i]) {
+            unique[i] = true;
+          }
+        });
+        return Object.keys(unique);
+      }
+      var new_b = removeDups(new_a);
+    
+     function searchValue (new_a){
+       var index = []
+      for (i of new_b){
+        for(k=0;k<new_a.length;k++){
+          
+        if (new_a[k] == Number(i) ){
+          var temp = []
+          temp.push[k]
+          
+        }
+        index.push(temp)
+    
+       
+      }
+      }
+}
+searchValue (new_a)
+}
+
+
+console.log(meanGroups(a))
+//new_a [3,4,2.5,2.5,3]
+
+
+
+
+  </script>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
